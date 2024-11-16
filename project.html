@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .homepage{
+            height: 100vh;
+            background-image: url(backgrond.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .hp1{
+            font-size: 38px;
+            margin: 0px 0px 5px 90px;
+            color: white;
+        }
+        
+        .hp3{
+            font-size: 20px;
+            margin: 0px 0px 5px 90px;
+            color: white;
+        }
+        .hp4{
+            font-size: 20px;
+            margin: 0px 0px 5px 90px;
+            color: white;
+        }
+        .homepage h2{
+            color: red;
+            font-size: 100px;
+            margin: 0px 0px 5px 90px;
+        }
+        .box{
+            width: 175px;
+            border: 1px solid black;
+            background-color: white;
+            margin: 0px 0px 5px 90px;
+            
+        }
+      
+        
+        
+        
+        
+        
+        
+        .container{
+            height: 100px;
+            width: 80%;
+        }
+        
+        .trend{
+
+        }
+
+        .trend h1{
+            text-align: center;
+            align-content: center;
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+
+        .trend .trending-con{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .trending-con .p-box{
+             height: 200px;
+             width: 240px;
+
+        }
+
+        .p-box img{
+            height: 80%;
+            width: 100%;
+        }
+        .p-box span{
+           margin: 10px 0px 10px 60px;
+        }
+
+        .netflix{
+            height: 60vh;
+            background-color: #333;
+        }
+        .netflix h1{
+            font-size: 70px;
+        }
+
+        .faq{
+            width: 70%;
+          
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+           position: relative;
+           left: 200px;
+           top: 0px;
+
+        }
+
+        .faq .que{
+            width: 100%;
+            height: 50px;
+            background-color: #444;
+            margin: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .que p{
+            margin-left: 10px;
+        }
+
+        .que span{
+            margin-right: 10px;
+        }
+        .ans{
+             display: none; 
+            width: 100%;
+            position: relative;
+            left: 0px ;
+            right: 0px;
+        }
+        .qa{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <section class="homepage">
+        <h2>NETFLIX</h2>
+        <h1 class="hp1">Unlimited movies,<br>TV shows & more</h1>
+        <h3 class="hp3">Starts at Rs 149.Cancel at any time.</h3>
+        <h3 class="hp4">Ready to watch? Enter your email to <br>create or restart your membership</h3>
+        <div class="container">
+            <div class="box">
+                <input type="text" id="input" placeholder="Email address">
+               
+            </div>
+    
+        </div>
+
+    </section>
+    <section class="trend">
+        <h1>Trending Now</h1>
+        <div class="trending-con">
+            <div class="p-box">
+            
+                <img src="streep1.jpg" alt="">
+                <span>Stree2</span>
+    
+            </div>
+            
+            <div class="p-box">
+                <img src="tarak.jpg" alt="">
+                <span>TMKOC</span>
+            </div>
+            <div class="p-box">
+                <img src="kids.jpg" alt="">
+               <span>Cartoon</span>
+    
+            </div>
+            <div class="p-box">
+                <img src="singham.jpg" alt="">
+               <span>Singham Again</span>
+    
+            </div>
+            <div class="p-box">
+                <img src="fighter.jpg" alt="">
+               <span>Fighter</span>
+    
+            </div>
+            <div class="p-box">
+                <img src="ks.jpg" alt="">
+               <span>The Kapil Sharma Show</span>
+    
+            </div>
+        </div>
+        
+    </section>
+    <section>
+    
+        <div class="netflix">
+                <h1>Frquently Asked Questions</h1>
+               <div class="faq" >
+                    
+                <div class="qa" onclick="dis(this)"  id="id">
+                    <div class="que" >
+                        <p>this is question</p>
+                        <span>+</span>
+                        
+                     </div>
+                     <div class="ans">
+                        this will be hidden by default
+                    </div>
+                </div>
+                <div class="qa" onclick="dis(this)"  id="id">
+                    <div class="que" >
+                        <p>this is question</p>
+                        <span>+</span>
+                        
+                     </div>
+                     <div class="ans">
+                        this will be hidden by default
+                    </div>
+                </div>
+                <div class="qa" onclick="dis(this)"  id="id">
+                    <div class="que" >
+                        <p>this is question</p>
+                        <span>+</span>
+                        
+                     </div>
+                     <div class="ans">
+                        this will be hidden by default
+                    </div>
+                </div>
+                <div class="qa" onclick="dis(this)"  id="id">
+                    <div class="que" >
+                        <p>this is question</p>
+                        <span>+</span>
+                        
+                     </div>
+                     <div class="ans">
+                        this will be hidden by default
+                    </div>
+                </div>
+                <div class="qa" onclick="dis(this)"  id="id">
+                    <div class="que" >
+                        <p>this is question</p>
+                        <span>+</span>
+                        
+                     </div>
+                     <div class="ans">
+                        this will be hidden by default
+                    </div>
+                </div>
+               </div>
+            </div>
+        
+    </section>
+    <script>
+        function dis(tag) {
+            let t=document.getElementById('id')
+            
+            console.log(t.childNodes);
+            if(tag.childNodes[3].style.display==='none'){
+                tag.childNodes[3].style.display='block'
+            }else{
+                tag.childNodes[3].style.display='none'
+            }
+        }
+    </script>
+    
+</body>
+</html>
